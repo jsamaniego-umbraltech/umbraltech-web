@@ -32,3 +32,11 @@ storybook-static
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Cloudflare / Wrangler
+.wrangler
+.dev.vars*
+
+# Claude Code / Impeccable (configuración local por máquina)
+.claude/settings.local.json
+.impeccable/config.local.json
