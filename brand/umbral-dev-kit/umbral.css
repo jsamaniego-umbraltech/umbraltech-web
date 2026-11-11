@@ -1,0 +1,54 @@
+/* Umbral Technologies · variables de diseño
+   Uso: importa este archivo una vez (en el layout raíz) y usa var(--u-...) */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --u-font: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --u-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --u-radius-sm: 6px;
+  --u-radius-md: 10px;
+  --u-radius-lg: 16px;
+
+  /* Tema claro (por defecto) */
+  --u-bg: #FFFFFF;
+  --u-surface: #EEF4EF;
+  --u-border: #D3E0D7;
+  --u-text: #0E1F16;
+  --u-text-2: #3D5446;
+  --u-text-muted: #5E7366;
+  --u-primary: #17804A;
+  --u-primary-hover: #146C3F;
+  --u-on-primary: #FFFFFF;
+  --u-accent: #1E9E5A;
+  --u-error: #B42318;
+  --u-warning: #B54708;
+  --u-success: #17804A;
+}
+
+/* Tema oscuro: automático según el sistema, o forzado con data-theme="dark" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --u-bg: #0E1F16; --u-surface: #1A2E23; --u-border: #2A4334;
+    --u-text: #EEF4EF; --u-text-2: #A9C2B2; --u-text-muted: #7C9686;
+    --u-primary: #3DDC84; --u-primary-hover: #5FE69C; --u-on-primary: #0E1F16;
+    --u-accent: #3DDC84; --u-error: #F97066; --u-warning: #FDB022; --u-success: #3DDC84;
+  }
+}
+:root[data-theme="dark"] {
+  --u-bg: #0E1F16; --u-surface: #1A2E23; --u-border: #2A4334;
+  --u-text: #EEF4EF; --u-text-2: #A9C2B2; --u-text-muted: #7C9686;
+  --u-primary: #3DDC84; --u-primary-hover: #5FE69C; --u-on-primary: #0E1F16;
+  --u-accent: #3DDC84; --u-error: #F97066; --u-warning: #FDB022; --u-success: #3DDC84;
+}
+
+body { margin: 0; font-family: var(--u-font); background: var(--u-bg); color: var(--u-text); }
+
+/* Botón base de ejemplo */
+.u-btn {
+  font: 600 14px/1 var(--u-font);
+  min-height: 44px; padding: 0 20px;
+  border: 0; border-radius: var(--u-radius-md);
+  background: var(--u-primary); color: var(--u-on-primary); cursor: pointer;
+}
+.u-btn:hover { background: var(--u-primary-hover); }
