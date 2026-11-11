@@ -2,6 +2,8 @@
 Dominio: umbraltech.net
 Stack: React + TypeScript + Vite. Hosting: Cloudflare Workers con static assets.
 Páginas: `/` y `/privacidad` mediante la entrada múltiple de Vite (sin router).
+Formulario: `worker/index.ts` atiende POST `/api/contacto` y envía con Resend a
+admin@umbraltech.net. El correo del dominio es Google Workspace: no activar Email Routing.
 Público: pymes, mipymes y empresas medianas y grandes de Panamá, y sector público.
 No nombrar a APEDE ni a otros gremios. Idioma: español.
 Contexto de producto: PRODUCT.md. Sistema visual: DESIGN.md (se escribe al cerrar el build).

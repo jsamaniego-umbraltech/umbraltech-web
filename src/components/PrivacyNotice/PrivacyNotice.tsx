@@ -81,10 +81,12 @@ export function PrivacyNotice({ updated = '10 de noviembre de 2026' }: PrivacyNo
         <section aria-labelledby="p-terceros">
           <h2 id="p-terceros">Quién más puede tratarlos</h2>
           <p>
-            Los proveedores técnicos que alojan este sitio y reciben el
-            formulario, que actúan por nuestra cuenta y solo para ese fin. Algunos
-            pueden procesar los datos fuera de Panamá con medidas de seguridad
-            adecuadas.
+            Los proveedores técnicos que usamos para operar este sitio, que
+            actúan por nuestra cuenta y solo para ese fin: Cloudflare, que aloja
+            el sitio y recibe el formulario; Resend, que nos lo entrega por
+            correo; y Google Workspace, donde recibimos ese correo. Estos
+            proveedores pueden procesar los datos fuera de Panamá con medidas de
+            seguridad adecuadas.
           </p>
         </section>
 

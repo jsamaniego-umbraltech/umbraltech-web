@@ -48,7 +48,8 @@ Restricciones:
 - Secciones: Hero, Servicios, Portafolio, Cómo trabajamos, Contacto, Footer.
 - Formulario de contacto con aviso de privacidad conforme a la Ley 81 de 2019 (Panamá).
 - Sin dependencias pesadas.
-- Abierto: canal y destino del formulario (correo, WhatsApp, servicio de formularios).
+- Formulario: POST a `/api/contacto` en el Worker, que envía el mensaje con Resend a
+  admin@umbraltech.net (el MX del dominio es Google Workspace; no usar Email Routing).
 
 ## Brand Commitments
 
