@@ -12,6 +12,6 @@ export const company = {
   ruc: null as string | null,
   /** Correo para contacto y para ejercer derechos sobre datos personales. PENDIENTE. */
   email: null as string | null,
-  /** Endpoint que recibe el formulario de contacto (POST JSON). */
-  contactEndpoint: (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) ?? null,
+  /** Endpoint del Worker que recibe el formulario y lo envía a admin@umbraltech.net. */
+  contactEndpoint: '/api/contacto',
 }
