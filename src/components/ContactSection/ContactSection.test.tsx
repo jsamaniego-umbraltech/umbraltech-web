@@ -10,3 +10,10 @@ describe('ContactSection', () => {
     expect(screen.getByRole('button', { name: 'Enviar mensaje' })).toBeInTheDocument()
   })
 })
+
+describe('ContactSection direct email', () => {
+  it('offers the public contact email', () => {
+    render(<ContactSection send={async () => {}} />)
+    expect(screen.getByRole('link', { name: 'admin@umbraltech.net' })).toHaveAttribute('href', 'mailto:admin@umbraltech.net')
+  })
+})

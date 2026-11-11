@@ -21,3 +21,12 @@ describe('PrivacyNotice', () => {
     expect(screen.getAllByText('dato pendiente de publicación').length).toBeGreaterThan(0)
   })
 })
+
+describe('PrivacyNotice contact', () => {
+  it('gives the email to exercise data rights', () => {
+    render(<PrivacyNotice />)
+    const links = screen.getAllByRole('link', { name: 'admin@umbraltech.net' })
+    expect(links.length).toBeGreaterThanOrEqual(2)
+    links.forEach((l) => expect(l).toHaveAttribute('href', 'mailto:admin@umbraltech.net'))
+  })
+})

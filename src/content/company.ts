@@ -10,8 +10,8 @@ export const company = {
   legalName: null as string | null,
   /** RUC. PENDIENTE. */
   ruc: null as string | null,
-  /** Correo para contacto y para ejercer derechos sobre datos personales. PENDIENTE. */
-  email: null as string | null,
+  /** Correo público de contacto y para ejercer derechos sobre datos personales. */
+  email: 'admin@umbraltech.net' as string | null,
   /** Endpoint del Worker que recibe el formulario y lo envía a admin@umbraltech.net. */
   contactEndpoint: '/api/contacto',
 }
