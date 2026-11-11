@@ -7,7 +7,7 @@ export interface ProcessProps {
 
 export function Process({ steps = defaultSteps }: ProcessProps) {
   return (
-    <section className="section process" id="como-trabajamos" aria-labelledby="proceso-titulo">
+    <section className="section section--grid process" id="como-trabajamos" aria-labelledby="proceso-titulo">
       <div className="section__inner">
         <header className="section__header">
           <h2 className="section__title" id="proceso-titulo">

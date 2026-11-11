@@ -14,7 +14,7 @@ export interface PortfolioProps {
 export function Portfolio({ projects = defaultProjects }: PortfolioProps) {
   return (
     <section
-      className="section section--surface portfolio"
+      className="section section--surface section--grid portfolio"
       id="portafolio"
       aria-labelledby="portafolio-titulo"
     >

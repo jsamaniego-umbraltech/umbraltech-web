@@ -1,5 +1,4 @@
 import type { Service } from '../../content/services'
-import { ServiceMotif } from './ServiceMotif'
 import './ServiceCard.css'
 
 export interface ServiceCardProps {
@@ -25,14 +24,13 @@ export function ServiceCard({
       aria-labelledby={titleId}
     >
       <div className="service-card__head">
-        <ServiceMotif motif={service.motif} />
         <Heading className="service-card__title" id={titleId}>
           {service.title}
         </Heading>
       </div>
       <div className="service-card__body">
         <p className="service-card__summary">{service.summary}</p>
-        <p className="service-card__label" id={`${titleId}-incluye`}>
+        <p className="visually-hidden" id={`${titleId}-incluye`}>
           Incluye
         </p>
         <ul

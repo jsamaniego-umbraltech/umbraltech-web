@@ -1,6 +1,6 @@
 /*
- * Pliego del programa de identidad: una fila de la grilla maestra, con la regla
- * superior como único borde. En escritorio el título ocupa 5 columnas y el
+ * Fila del índice de servicios: una fila de la grilla maestra, con la regla
+ * superior como único borde (se enciende en --accent al hover/foco). En escritorio el título ocupa 5 columnas y el
  * cuerpo el resto.
  */
 .service-card {
@@ -9,10 +9,8 @@
   grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
   column-gap: var(--grid-gap);
   row-gap: var(--space-6);
-  padding: var(--space-8) var(--space-6) var(--space-10);
-  background: var(--surface);
+  padding: var(--space-8) 0 var(--space-10);
   border-top: 1px solid var(--border);
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
 .service-card::before {
@@ -39,24 +37,7 @@
 .service-card__head {
   display: flex;
   flex-direction: column;
-  gap: var(--space-6);
   align-items: flex-start;
-}
-
-.service-motif {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.service-motif__line {
-  fill: none;
-  stroke: var(--text-2);
-  stroke-width: 2;
-  stroke-linecap: square;
-}
-
-.service-motif__dot {
-  fill: var(--accent);
 }
 
 .service-card__title {
@@ -74,19 +55,10 @@
   max-width: 52ch;
 }
 
-.service-card__label {
-  margin-top: var(--space-8);
-  font-size: var(--text-xs);
-  font-weight: var(--weight-semibold);
-  letter-spacing: var(--tracking-caps);
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
 .service-card__includes {
   list-style: none;
   padding: 0;
-  margin-top: var(--space-3);
+  margin-top: var(--space-6);
   border-top: 1px solid var(--border);
 }
 
@@ -125,7 +97,7 @@
 
 @media (min-width: 48rem) {
   .service-card {
-    padding: var(--space-10) var(--space-8) var(--space-12);
+    padding: var(--space-10) 0 var(--space-12);
   }
 
   .service-card__head {

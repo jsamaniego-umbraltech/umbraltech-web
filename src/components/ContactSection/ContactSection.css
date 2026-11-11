@@ -16,6 +16,37 @@
   align-content: start;
 }
 
+.contact__next {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  max-width: 30rem;
+  border-top: 1px solid var(--border);
+}
+
+.contact__next li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact__next li::before {
+  content: '';
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--text-2);
+  transform: translateY(-0.0625rem);
+}
+
+.contact__next li:last-child::before {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 .contact__direct {
   color: var(--text-2);
 }

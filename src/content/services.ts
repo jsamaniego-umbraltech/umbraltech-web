@@ -1,11 +1,8 @@
-export type ServiceMotif = 'arc' | 'dot' | 'bars' | 'frame' | 'lens'
-
 export interface Service {
   id: string
   title: string
   summary: string
   includes: readonly string[]
-  motif: ServiceMotif
 }
 
 /**
@@ -23,7 +20,6 @@ export const services: readonly Service[] = [
       'Desarrollo web y móvil',
       'Soporte y evolución',
     ],
-    motif: 'arc',
   },
   {
     id: 'automatizacion-e-integraciones',
@@ -35,7 +31,6 @@ export const services: readonly Service[] = [
       'Automatización de procesos',
       'Reportes automáticos',
     ],
-    motif: 'dot',
   },
   {
     id: 'facturacion-electronica',
@@ -47,7 +42,6 @@ export const services: readonly Service[] = [
       'Pruebas y validación',
       'Acompañamiento en la puesta en marcha',
     ],
-    motif: 'bars',
   },
   {
     id: 'sitios-web',
@@ -55,7 +49,6 @@ export const services: readonly Service[] = [
     summary:
       'Sitios rápidos, accesibles y fáciles de mantener, pensados para que un cliente entienda qué haces y te escriba.',
     includes: ['Sitio corporativo', 'Landing pages', 'Dominio y hosting'],
-    motif: 'frame',
   },
   {
     id: 'analisis-de-sistemas',
@@ -67,6 +60,5 @@ export const services: readonly Service[] = [
       'Análisis de procesos',
       'Requisitos para proveedores',
     ],
-    motif: 'lens',
   },
 ]

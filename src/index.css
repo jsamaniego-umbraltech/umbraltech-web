@@ -154,6 +154,26 @@ html {
 
 .section--surface {
   background: var(--surface);
+  --grid-line: var(--surface-2);
+}
+
+/* Grilla maestra visible: hairlines al inicio de cada columna, como en el Hero */
+.section--grid .section__inner {
+  position: relative;
+  isolation: isolate;
+}
+
+.section--grid .section__inner::before {
+  content: '';
+  position: absolute;
+  inset: calc(var(--space-section) * -1) var(--gutter);
+  z-index: -1;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--grid-line, var(--surface)) 0 1px,
+    transparent 1px calc((100% + var(--grid-gap)) / var(--grid-columns))
+  );
 }
 
 .section__inner {
