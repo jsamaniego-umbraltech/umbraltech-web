@@ -1,0 +1,126 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-3) var(--gutter);
+  min-height: 4.5rem;
+}
+
+.site-header__brand {
+  display: block;
+  margin-right: auto;
+  padding: var(--space-1) 0;
+}
+
+.site-header__brand img {
+  width: clamp(8.5rem, 6rem + 6vw, 11rem);
+  height: auto;
+}
+
+.site-header__nav {
+  order: 3;
+}
+
+.site-header__toggle {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.site-header__toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+}
+
+.site-header__links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header[data-open='true'] .site-header__links {
+  display: block;
+  position: absolute;
+  inset: 100% 0 auto;
+  padding: var(--space-2) var(--gutter) var(--space-6);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header__links a {
+  display: block;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: var(--text-lg);
+  text-decoration: none;
+}
+
+.site-header__cta {
+  min-height: 3rem;
+  padding: 0 var(--space-5);
+}
+
+@media (min-width: 64rem) {
+  .site-header__nav {
+    order: 0;
+  }
+
+  .site-header__toggle {
+    display: none;
+  }
+
+  .site-header__links,
+  .site-header[data-open='true'] .site-header__links {
+    display: flex;
+    gap: var(--space-8);
+    position: static;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  .site-header__links a {
+    padding: var(--space-2) 0;
+    border: 0;
+    font-size: var(--text-sm);
+    color: var(--text-2);
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition:
+      color var(--duration-fast) var(--ease-out),
+      background-size var(--duration-base) var(--ease-out);
+  }
+
+  .site-header__links a:hover {
+    color: var(--text);
+    background-size: 100% 1px;
+  }
+
+  .site-header__cta {
+    margin-left: var(--space-4);
+  }
+}

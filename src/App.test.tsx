@@ -1,19 +1,16 @@
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
 import App from './App'
 
 describe('App', () => {
-  it('renders the main heading', () => {
+  it('renders a single page heading', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1)
   })
 
-  it('increments the counter on click', async () => {
-    const user = userEvent.setup()
+  it('provides a skip link to the main content', () => {
     render(<App />)
-    const button = screen.getByRole('button', { name: /count is 0/i })
-    await user.click(button)
-    expect(button).toHaveTextContent('Count is 1')
+    expect(screen.getByRole('link', { name: 'Saltar al contenido' })).toHaveAttribute('href', '#contenido')
+    expect(screen.getByRole('main')).toHaveAttribute('id', 'contenido')
   })
 })
