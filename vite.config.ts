@@ -1,13 +1,23 @@
 /// <reference types="vitest/config" />
 import react from '@vitejs/plugin-react'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      // Entrada múltiple: `/` y `/privacidad/`, sin router.
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        privacidad: fileURLToPath(new URL('./privacidad/index.html', import.meta.url)),
+      },
+    },
+  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
-    include: ['src/**/*.test.{ts,tsx}'],
+    include: ['src/**/*.test.{ts,tsx}', 'worker/**/*.test.ts'],
   },
 })

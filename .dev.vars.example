@@ -1,0 +1,3 @@
+# Copia a .dev.vars para `npx wrangler dev` (no se versiona).
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+ALLOWED_ORIGINS=http://localhost:8787

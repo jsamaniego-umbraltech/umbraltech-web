@@ -20,5 +20,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [".storybook/*.ts", "e2e", "playwright.config.ts"]
+  "include": [".storybook/*.ts", "e2e", "playwright.config.ts", "worker/**/*.test.ts"]
 }
