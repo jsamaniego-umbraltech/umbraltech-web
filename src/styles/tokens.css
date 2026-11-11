@@ -1,0 +1,80 @@
+/*
+ * Design tokens provisionales de Umbral Technology.
+ * Fuente única de colores y tipografía mientras no exista logo/identidad.
+ * Todos los pares texto/fondo indicados cumplen WCAG AA (≥ 4.5:1).
+ */
+:root {
+  /* ---------- Color: marca (provisional) ---------- */
+  --color-primary: #0b4f8a; /* azul profundo: CTA, enlaces */
+  --color-primary-hover: #083b68;
+  --color-on-primary: #ffffff;
+  --color-accent: #0f766e; /* verde azulado: acentos, íconos */
+  --color-accent-hover: #0b5c56;
+  --color-on-accent: #ffffff;
+
+  /* ---------- Color: superficies ---------- */
+  --color-bg: #ffffff;
+  --color-surface: #f5f7fa; /* secciones alternas, tarjetas */
+  --color-surface-strong: #0f1b2d; /* hero / footer oscuros */
+  --color-border: #d5dbe3;
+
+  /* ---------- Color: texto ---------- */
+  --color-text: #1f2937; /* cuerpo */
+  --color-text-muted: #4b5563; /* secundario */
+  --color-heading: #0f1b2d;
+  --color-text-inverse: #f5f7fa; /* sobre --color-surface-strong */
+
+  /* ---------- Color: estados ---------- */
+  --color-success: #15803d;
+  --color-warning: #a16207;
+  --color-error: #b91c1c;
+  --color-focus: #2563eb; /* anillo de foco visible */
+
+  /* ---------- Tipografía ---------- */
+  --font-sans:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-heading: var(--font-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Escala fluida mobile-first (320px → 1280px) */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: clamp(1.125rem, 1.08rem + 0.21vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.42vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 1.33rem + 0.83vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.35vw, 2.75rem);
+  --font-size-4xl: clamp(2.25rem, 1.8rem + 2.2vw, 3.5rem);
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-base: 1.6;
+
+  /* ---------- Espaciado (base 4px) ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* ---------- Forma y elevación ---------- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px rgb(15 27 45 / 0.08);
+  --shadow-md: 0 4px 12px rgb(15 27 45 / 0.12);
+
+  /* ---------- Layout ---------- */
+  --container-max: 72rem;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+}
