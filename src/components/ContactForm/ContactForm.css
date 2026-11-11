@@ -105,7 +105,7 @@
   margin: 0.125rem 0 0;
   background: var(--bg);
   border: 1px solid var(--border-control);
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
 }
 
