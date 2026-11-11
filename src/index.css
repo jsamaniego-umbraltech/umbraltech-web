@@ -145,3 +145,57 @@ html {
 .button--secondary:hover {
   border-color: var(--text);
 }
+
+/* Secciones: una grilla maestra; el ritmo alterna --bg y --surface */
+.section {
+  padding: var(--space-section) 0;
+  background: var(--bg);
+}
+
+.section--surface {
+  background: var(--surface);
+}
+
+.section__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section__header {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.section__title {
+  grid-column: 1 / -1;
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+}
+
+.section__intro {
+  grid-column: 1 / -1;
+  max-width: 48ch;
+  font-size: var(--text-lg);
+  color: var(--text-2);
+}
+
+@media (min-width: 64rem) {
+  .section__header {
+    align-items: end;
+    margin-bottom: var(--space-16);
+  }
+
+  .section__title {
+    grid-column: 1 / span 6;
+  }
+
+  .section__intro {
+    grid-column: 8 / -1;
+  }
+}
