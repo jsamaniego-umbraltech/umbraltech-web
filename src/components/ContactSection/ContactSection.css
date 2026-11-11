@@ -1,0 +1,37 @@
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--space-12);
+}
+
+.contact__intro,
+.contact__form {
+  grid-column: 1 / -1;
+}
+
+.contact__intro {
+  display: grid;
+  gap: var(--space-6);
+  align-content: start;
+}
+
+.contact__direct {
+  color: var(--text-2);
+}
+
+@media (min-width: 64rem) {
+  .contact__intro {
+    grid-column: 1 / span 5;
+    position: sticky;
+    top: 7rem;
+  }
+
+  .contact__intro .section__title {
+    grid-column: auto;
+  }
+
+  .contact__form {
+    grid-column: 7 / -1;
+  }
+}
