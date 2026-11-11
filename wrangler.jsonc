@@ -1,0 +1,16 @@
+// Cloudflare Workers con static assets (sin código de Worker).
+// Despliegue: `npm run build` y luego `npx wrangler deploy`.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "umbraltech-web",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "routes": [
+    { "pattern": "umbraltech.net", "custom_domain": true },
+    { "pattern": "www.umbraltech.net", "custom_domain": true }
+  ]
+}
