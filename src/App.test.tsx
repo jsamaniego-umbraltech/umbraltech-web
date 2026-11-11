@@ -14,3 +14,13 @@ describe('App', () => {
     expect(screen.getByRole('main')).toHaveAttribute('id', 'contenido')
   })
 })
+
+describe('App sections', () => {
+  it('has every section the navigation points to', () => {
+    const { container } = render(<App />)
+    for (const id of ['servicios', 'portafolio', 'como-trabajamos', 'contacto']) {
+      expect(container.querySelector(`#${id}`)).not.toBeNull()
+    }
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+  })
+})
