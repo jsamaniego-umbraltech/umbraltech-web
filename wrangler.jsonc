@@ -1,14 +1,24 @@
-// Cloudflare Workers con static assets (sin código de Worker).
+// Cloudflare Workers: static assets (dist/) + POST /api/contacto (worker/index.ts).
 // Despliegue: `npm run build` y luego `npx wrangler deploy`.
+// Secret requerido: `npx wrangler secret put RESEND_API_KEY`.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "umbraltech-web",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "none"
+    "not_found_handling": "none",
+    "run_worker_first": ["/api/*"]
   },
+  "vars": {
+    "CONTACT_TO": "admin@umbraltech.net",
+    "CONTACT_FROM": "Umbral Technologies <formulario@envios.umbraltech.net>",
+    "ALLOWED_ORIGINS": "https://umbraltech.net,https://www.umbraltech.net"
+  },
+  "observability": { "enabled": true },
   "routes": [
     { "pattern": "umbraltech.net", "custom_domain": true },
     { "pattern": "www.umbraltech.net", "custom_domain": true }
