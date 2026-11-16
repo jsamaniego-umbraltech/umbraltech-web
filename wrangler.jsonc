@@ -19,6 +19,13 @@
     "CONTACT_FROM": "Umbral Technologies <formulario@envios.umbraltech.net>",
     "ALLOWED_ORIGINS": "https://umbraltech.net,https://www.umbraltech.net"
   },
+  "previews": {
+    "vars": {
+      "CONTACT_TO": "admin@umbraltech.net",
+      "CONTACT_FROM": "Umbral Technologies (preview) <formulario@envios.umbraltech.net>",
+      "ALLOWED_ORIGINS": "https://umbraltech.net"
+    }
+  },
   "observability": { "enabled": true },
   "routes": [
     { "pattern": "umbraltech.net", "custom_domain": true },
