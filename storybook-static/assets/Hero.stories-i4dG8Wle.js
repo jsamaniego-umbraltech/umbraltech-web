@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./Hero-Ccne2HeD.js";var r,i,a,o;function s(){return(s=e((()=>{t(),r={title:`Secciones/Hero`,component:n,parameters:{layout:`fullscreen`}},i={},a={args:{animated:!1}},o=[`Default`,`SinAnimacion`]})))()}s();export{i as Default,a as SinAnimacion,o as __namedExportsOrder,r as default};
