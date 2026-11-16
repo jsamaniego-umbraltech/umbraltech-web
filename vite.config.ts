@@ -8,10 +8,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      // Entrada múltiple: `/` y `/privacidad/`, sin router.
+      // Entrada múltiple: `/`, `/privacidad/` y `404.html`, sin router.
       input: {
         main: fileURLToPath(new URL('./index.html', import.meta.url)),
         privacidad: fileURLToPath(new URL('./privacidad/index.html', import.meta.url)),
+        notFound: fileURLToPath(new URL('./404.html', import.meta.url)),
       },
     },
   },
