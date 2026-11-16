@@ -1,0 +1,107 @@
+/*
+ * La secuencia sí lleva información, así que se numera. Motivo: una regla
+ * continua con un punto por etapa (el punto del logo).
+ */
+.process__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-10);
+  counter-reset: none;
+}
+
+.process__step {
+  position: relative;
+  padding-left: var(--space-10);
+}
+
+.process__step::before {
+  content: '';
+  position: absolute;
+  left: 0.3125rem;
+  top: 0.5rem;
+  bottom: calc(var(--space-10) * -1);
+  width: 1px;
+  background: var(--border);
+}
+
+.process__step:last-child::before {
+  display: none;
+}
+
+.process__step::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.1875rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--text-2);
+}
+
+.process__step:last-child::after {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.process__number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.process__title {
+  margin-top: var(--space-2);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+
+.process__description {
+  margin-top: var(--space-3);
+  max-width: 40ch;
+  color: var(--text-2);
+}
+
+.process__outcome {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+  max-width: 40ch;
+  font-weight: var(--weight-semibold);
+}
+
+@media (min-width: 64rem) {
+  .process__steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--grid-gap);
+  }
+
+  .process__step {
+    padding: var(--space-10) 0 0;
+  }
+
+  .process__step::before {
+    left: 0;
+    right: calc(var(--grid-gap) * -1);
+    top: 0.3125rem;
+    bottom: auto;
+    width: auto;
+    height: 1px;
+  }
+
+  .process__step::after {
+    top: 0;
+  }
+
+  .process__step:last-child::before {
+    display: block;
+    right: 0;
+  }
+}

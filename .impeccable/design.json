@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T03:20:43.601241+00:00",
+  "title": "Design System: Umbral Technologies",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Verde Señal",
+        "canonical": "#3ddc84",
+        "tonalRamp": [
+          "#143824",
+          "#1f683f",
+          "#259c5a",
+          "#27d474",
+          "#5cda94",
+          "#90dfb4",
+          "#c1e9d3",
+          "#edf8f2"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Verde Señal Claro",
+        "canonical": "#5fe69c",
+        "tonalRamp": [
+          "#133924",
+          "#1d6a40",
+          "#229f5a",
+          "#23d975",
+          "#59dd94",
+          "#8ee1b4",
+          "#c0ead3",
+          "#edf8f2"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "Tinta sobre Señal",
+        "canonical": "#0e1f16",
+        "tonalRamp": [
+          "#1c3026",
+          "#2f5742",
+          "#40815f",
+          "#4fad7b",
+          "#79bd99",
+          "#a2cdb7",
+          "#cae0d4",
+          "#eff5f2"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Campo Verde-900",
+        "canonical": "#0e1f16",
+        "tonalRamp": [
+          "#1c3026",
+          "#2f5742",
+          "#40815f",
+          "#4fad7b",
+          "#79bd99",
+          "#a2cdb7",
+          "#cae0d4",
+          "#eff5f2"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Pliego Verde-800",
+        "canonical": "#1a2e23",
+        "tonalRamp": [
+          "#1f2e26",
+          "#355242",
+          "#49785e",
+          "#5ba07a",
+          "#82b498",
+          "#a8c8b6",
+          "#cdddd4",
+          "#f0f4f2"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Pliego Hondo",
+        "canonical": "#223a2d",
+        "tonalRamp": [
+          "#1f2d26",
+          "#365142",
+          "#4a775f",
+          "#5d9e7b",
+          "#83b299",
+          "#a9c7b7",
+          "#cdddd4",
+          "#f0f4f2"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Regla",
+        "canonical": "#2a4334",
+        "tonalRamp": [
+          "#202c25",
+          "#375041",
+          "#4d745d",
+          "#619a78",
+          "#86b097",
+          "#abc5b5",
+          "#cedcd4",
+          "#f1f4f2"
+        ]
+      },
+      "border-control": {
+        "role": "neutral",
+        "displayName": "Borde de Control",
+        "canonical": "#7c9686",
+        "tonalRamp": [
+          "#232926",
+          "#3e4942",
+          "#576a5e",
+          "#708b7b",
+          "#91a599",
+          "#b2beb7",
+          "#d2d8d4",
+          "#f1f3f2"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Texto",
+        "canonical": "#eef4ef",
+        "tonalRamp": [
+          "#212c23",
+          "#384f3c",
+          "#4e7354",
+          "#63986c",
+          "#87ae8e",
+          "#acc4b0",
+          "#cfdbd1",
+          "#f1f4f1"
+        ]
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Texto Secundario",
+        "canonical": "#a9c2b2",
+        "tonalRamp": [
+          "#222b25",
+          "#3a4c41",
+          "#526f5c",
+          "#689378",
+          "#8baa97",
+          "#aec2b5",
+          "#d0dad4",
+          "#f1f4f2"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Texto Tenue",
+        "canonical": "#7c9686",
+        "tonalRamp": [
+          "#232926",
+          "#3e4942",
+          "#576a5e",
+          "#708b7b",
+          "#91a599",
+          "#b2beb7",
+          "#d2d8d4",
+          "#f1f3f2"
+        ]
+      },
+      "error": {
+        "role": "status",
+        "displayName": "Error",
+        "canonical": "#f97066",
+        "tonalRamp": [
+          "#3e110e",
+          "#741912",
+          "#b01c11",
+          "#f11a0a",
+          "#ef5347",
+          "#ed8b83",
+          "#f0beba",
+          "#f9eceb"
+        ]
+      },
+      "warning": {
+        "role": "status",
+        "displayName": "Aviso",
+        "canonical": "#fdb022",
+        "tonalRamp": [
+          "#402e0d",
+          "#78530f",
+          "#b57a0c",
+          "#f8a203",
+          "#f4b542",
+          "#f0c980",
+          "#f2deb8",
+          "#faf4eb"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Solo el titular del Hero."
+      },
+      "headline": {
+        "displayName": "Titular de sección",
+        "purpose": "Títulos de sección, H1 de /privacidad, filas de servicio en escritorio."
+      },
+      "title": {
+        "displayName": "Título",
+        "purpose": "Servicios (móvil), proyectos, etapas."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Línea de apoyo del Hero."
+      },
+      "body-lg": {
+        "displayName": "Cuerpo grande",
+        "purpose": "Intros de sección y resúmenes."
+      },
+      "body": {
+        "displayName": "Cuerpo",
+        "purpose": "Texto corrido."
+      },
+      "label": {
+        "displayName": "Etiqueta",
+        "purpose": "Etiquetas de formulario y cabeceras de demo."
+      },
+      "mono-data": {
+        "displayName": "Mono de datos",
+        "purpose": "Solo datos, códigos, montos y números de secuencia."
+      }
+    },
+    "shadows": [],
+    "focus": {
+      "value": "outline: 2px solid var(--focus); outline-offset: 3px",
+      "purpose": "Anillo de foco global; en campos el offset es 0."
+    },
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Curva única de todas las transiciones."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Color y borde de botones y campos."
+      },
+      {
+        "name": "duration-base",
+        "value": "300ms",
+        "purpose": "Reglas que se encienden en acento (índice, filas, nav)."
+      },
+      {
+        "name": "arc-draw",
+        "value": "1400ms + 200ms delay; punto 500ms a 1300ms",
+        "purpose": "Dibujo único del arco; desactivado con prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "base",
+        "value": "0 (4 columnas, gap 16px)"
+      },
+      {
+        "name": "md",
+        "value": "48rem (8 columnas, gap 24px)"
+      },
+      {
+        "name": "lg",
+        "value": "64rem (12 columnas)"
+      },
+      {
+        "name": "portfolio-narrow",
+        "value": "max-width 30rem (filas de demo en dos líneas)"
+      }
+    ],
+    "grid": {
+      "containerMax": "90rem",
+      "gutter": "clamp(1.25rem, 0.5rem + 3.5vw, 4rem)",
+      "hairline": "1px en surface sobre bg; surface-2 sobre surface"
+    },
+    "assetProvenance": [
+      {
+        "path": "public/og/og-1200x630.png",
+        "source": "brand/umbral-dev-kit/assets/logo-horizontal-fondo-oscuro.svg (sin modificar)",
+        "method": "Render con Playwright, Inter 700/400 cargadas, centrado sobre #0E1F16"
+      },
+      {
+        "path": "public/og/og-1080x1080.png",
+        "source": "brand/umbral-dev-kit/assets/logo-horizontal-fondo-oscuro.svg (sin modificar)",
+        "method": "Render con Playwright, Inter 700/400 cargadas, centrado sobre #0E1F16"
+      },
+      {
+        "path": "brand/umbral-dev-kit/assets/logo-*-outlined.svg",
+        "source": "logos del kit",
+        "method": "Texto convertido a trazados desde Inter Bold/Regular; desviación de glifo <= 1px"
+      },
+      {
+        "path": "src/assets/brand/logo-umbral-oscuro.svg",
+        "source": "brand/umbral-dev-kit/assets/logo-horizontal-fondo-oscuro-outlined.svg",
+        "method": "Solo viewBox recortado y rect de fondo eliminado"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA principal; uno por vista.",
+      "html": "<button class=\"ds-btn-primary\">Agenda una conversación</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:0 1.5rem;border:1px solid transparent;border-radius:10px;background:var(--accent,#3ddc84);color:var(--on-accent,#0e1f16);font:600 1rem/1 'Sora Variable','Sora',system-ui,sans-serif;cursor:pointer;transition:background-color 150ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-primary:hover{background:var(--accent-hover,#5fe69c)}.ds-btn-primary:focus-visible{outline:2px solid var(--focus,#3ddc84);outline-offset:3px}"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción alternativa junto al CTA.",
+      "html": "<button class=\"ds-btn-secondary\">Ver servicios</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:0 1.5rem;background:transparent;border:1px solid var(--border-control,#7c9686);border-radius:10px;color:var(--text,#eef4ef);font:600 1rem/1 'Sora Variable','Sora',system-ui,sans-serif;cursor:pointer;transition:border-color 150ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-secondary:hover{border-color:var(--text,#eef4ef)}.ds-btn-secondary:focus-visible{outline:2px solid var(--focus,#3ddc84);outline-offset:3px}"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo del formulario de contacto.",
+      "html": "<label class=\"ds-field\"><span>Nombre</span><input class=\"ds-input\" placeholder=\"\"></label>",
+      "css": ".ds-field{display:grid;gap:.5rem;font:600 .875rem 'Sora Variable','Sora',system-ui,sans-serif;color:var(--text,#eef4ef)}.ds-input{min-height:3rem;padding:.75rem 1rem;background:var(--bg,#0e1f16);color:var(--text,#eef4ef);border:1px solid var(--border-control,#7c9686);border-radius:6px;font:400 1rem 'Sora Variable','Sora',system-ui,sans-serif;caret-color:var(--accent,#3ddc84);transition:border-color 150ms}.ds-input:hover{border-color:var(--text-2,#a9c2b2)}.ds-input:focus-visible{outline:2px solid var(--focus,#3ddc84);outline-offset:0;border-color:var(--focus,#3ddc84)}"
+    },
+    {
+      "name": "Navegación de cabecera",
+      "kind": "nav",
+      "refersTo": "site-header",
+      "description": "Cabecera sticky con enlaces y CTA.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Servicios</a><a href=\"#\">Portafolio</a><a href=\"#\">Cómo trabajamos</a><a href=\"#\">Contacto</a></nav>",
+      "css": ".ds-nav{display:flex;gap:2rem;padding:1rem;background:var(--bg,#0e1f16);border-bottom:1px solid var(--border,#2a4334)}.ds-nav a{padding:.5rem 0;font:400 .875rem 'Sora Variable','Sora',system-ui,sans-serif;color:var(--text-2,#a9c2b2);text-decoration:none;background-image:linear-gradient(var(--accent,#3ddc84),var(--accent,#3ddc84));background-size:0 1px;background-position:0 100%;background-repeat:no-repeat;transition:color 150ms,background-size 300ms cubic-bezier(0.22,1,0.36,1)}.ds-nav a:hover,.ds-nav a:focus-visible{color:var(--text,#eef4ef);background-size:100% 1px}"
+    },
+    {
+      "name": "Banda de índice de servicios",
+      "kind": "custom",
+      "refersTo": "service-index-band",
+      "description": "Índice de servicios al pie del Hero; regla superior en acento al hover/foco.",
+      "html": "<ul class=\"ds-index\"><li><a href=\"#\">Software a la medida</a></li><li><a href=\"#\">Automatización e integraciones</a></li><li><a href=\"#\">Facturación electrónica</a></li></ul>",
+      "css": ".ds-index{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);background:var(--surface,#1a2e23);border-top:1px solid var(--border,#2a4334)}.ds-index li{border-left:1px solid var(--border,#2a4334)}.ds-index a{position:relative;display:flex;min-height:6rem;padding:1.25rem 1.25rem 2rem;color:var(--text,#eef4ef);font:600 1rem/1.35 'Sora Variable','Sora',system-ui,sans-serif;text-decoration:none}.ds-index a::before{content:'';position:absolute;inset:-1px 0 auto;height:1px;background:var(--accent,#3ddc84);transform:scaleX(0);transform-origin:left;transition:transform 300ms cubic-bezier(0.22,1,0.36,1)}.ds-index a:hover::before,.ds-index a:focus-visible::before{transform:scaleX(1)}.ds-index a:focus-visible{outline:2px solid var(--focus,#3ddc84);outline-offset:-3px}"
+    },
+    {
+      "name": "Fila de servicio",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Servicio como fila plana de índice, nunca tarjeta.",
+      "html": "<article class=\"ds-row\" tabindex=\"0\"><h3>Software a la medida</h3><p>Sistemas web y aplicaciones que siguen la forma en que opera tu empresa.</p></article>",
+      "css": ".ds-row{position:relative;display:grid;grid-template-columns:5fr 7fr;gap:1.5rem;padding:2.5rem 0 3rem;border-top:1px solid var(--border,#2a4334);color:var(--text,#eef4ef);font-family:'Sora Variable','Sora',system-ui,sans-serif}.ds-row h3{margin:0;font-size:2rem;font-weight:700;line-height:1.15;letter-spacing:-0.03em}.ds-row p{margin:0;font-size:1.125rem;line-height:1.6;color:var(--text-2,#a9c2b2)}.ds-row::before{content:'';position:absolute;inset:-1px 0 auto;height:1px;background:var(--accent,#3ddc84);transform:scaleX(0);transform-origin:left;transition:transform 300ms cubic-bezier(0.22,1,0.36,1)}.ds-row:hover::before,.ds-row:focus-within::before,.ds-row:focus-visible::before{transform:scaleX(1)}.ds-row:focus-visible{outline:2px solid var(--focus,#3ddc84);outline-offset:3px}"
+    },
+    {
+      "name": "Marco de demo",
+      "kind": "card",
+      "refersTo": "demo-frame",
+      "description": "Pantalla de portafolio con datos ficticios rotulados.",
+      "html": "<figure class=\"ds-demo\"><figcaption><span>Movimientos del día</span><span class=\"ds-demo-tag\">Ejemplo · datos ficticios</span></figcaption><table><tr><td>TRF 004812 · Cliente 0412</td><td class=\"ds-num\">B/. 1,240.00</td><td><span class=\"ds-st ds-st--ok\">Listo</span></td></tr><tr><td>DEP 000931 · Sin referencia</td><td class=\"ds-num\">B/. 75.00</td><td><span class=\"ds-st ds-st--alert\">Revisar</span></td></tr></table></figure>",
+      "css": ".ds-demo{margin:0;background:var(--bg,#0e1f16);border:1px solid var(--border,#2a4334);border-radius:6px;overflow:hidden;color:var(--text,#eef4ef)}.ds-demo figcaption{display:flex;justify-content:space-between;gap:.5rem;padding:.75rem 1rem;border-bottom:1px solid var(--border,#2a4334);font:600 .875rem 'Sora Variable','Sora',system-ui,sans-serif}.ds-demo-tag{font-weight:400;color:var(--text-muted,#7c9686)}.ds-demo table{width:100%;border-collapse:collapse;font:400 .875rem 'JetBrains Mono Variable','JetBrains Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}.ds-demo td{padding:.75rem 1rem;border-bottom:1px solid var(--border,#2a4334)}.ds-demo tr:last-child td{border-bottom:0}.ds-num{text-align:right;white-space:nowrap}.ds-st{display:inline-flex;align-items:center;gap:.5rem;color:var(--text-2,#a9c2b2)}.ds-st::before{content:'';width:.5rem;height:.5rem;border-radius:50%;border:1px solid var(--text-muted,#7c9686)}.ds-st--ok::before{background:var(--accent,#3ddc84);border-color:var(--accent,#3ddc84)}.ds-st--alert{color:var(--warning,#fdb022)}.ds-st--alert::before{background:var(--warning,#fdb022);border-color:var(--warning,#fdb022)}"
+    },
+    {
+      "name": "Arco Umbral",
+      "kind": "custom",
+      "description": "La única figura: arco U y punto del logo, dibujado una vez.",
+      "html": "<svg class=\"ds-arc\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><path class=\"ds-arc-guide\" d=\"M14 0V34A18 18 0 0 0 50 34V0\"/><path class=\"ds-arc-stroke\" d=\"M14 6V34A18 18 0 0 0 50 34V6\" pathLength=\"1\"/><circle class=\"ds-arc-dot\" cx=\"32\" cy=\"32\" r=\"7\"/></svg>",
+      "css": ".ds-arc{width:10rem;height:auto;overflow:visible}.ds-arc-guide{fill:none;stroke:var(--border,#2a4334);stroke-width:.25}.ds-arc-stroke{fill:none;stroke:var(--text,#eef4ef);stroke-width:9}.ds-arc-dot{fill:var(--accent,#3ddc84)}@media (prefers-reduced-motion:no-preference){.ds-arc-stroke{stroke-dasharray:1;stroke-dashoffset:1;animation:ds-arc-draw 1400ms cubic-bezier(0.22,1,0.36,1) 200ms forwards}.ds-arc-dot{transform-origin:32px 32px;transform:scale(0);animation:ds-arc-dot 500ms cubic-bezier(0.22,1,0.36,1) 1300ms forwards}}@keyframes ds-arc-draw{to{stroke-dashoffset:0}}@keyframes ds-arc-dot{to{transform:scale(1)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El informe anual de una institución seria",
+    "overview": "El sitio se lee como un programa de identidad bancaria modernista latinoamericano: una grilla maestra visible sobre un campo verde muy oscuro, titulares en Sora bold a escala de cartel con tracking cerrado y una única figura geométrica, el arco U y el punto del logo. La densidad es editorial, no de panel de control: mucho aire vertical entre secciones, reglas de 1px como estructura y casi ningún relleno de color.\n\nCada sección cambia de motivo geométrico sin salir de la misma grilla: hairlines de columna en el Hero y en las secciones de grilla, filas de índice en Servicios, pantallas de datos en Portafolio, una regla continua con un punto por etapa en Cómo trabajamos. El verde luz aparece poco y siempre con función.\n\nEl mundo rechaza explícitamente la landing de agencia: titular centrado, fila de tarjetas iguales, iconografía genérica, brillo de color.",
+    "keyCharacteristics": [
+      "Solo tema oscuro, también en `/privacidad`.",
+      "Grilla maestra de 4 / 8 / 12 columnas, visible como hairlines.",
+      "Sora bold monumental; JetBrains Mono solo para datos.",
+      "El arco U y el punto del logo son las únicas figuras.",
+      "Plano: profundidad por tonos de superficie y reglas de 1px, nunca por sombras."
+    ],
+    "rules": [
+      {
+        "name": "La regla de la Señal Escasa",
+        "body": "El acento marca acción, enlace o estado activo; nunca rellena áreas, nunca forma degradados, nunca brilla. Sin glow ni sombras de color.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla del Ritmo de Pliegos",
+        "body": "Las secciones alternan bg y surface (Hero en bg con banda de índice en surface, Servicios bg, Portafolio surface, Cómo trabajamos bg, Contacto surface, Pie bg). surface-2 es el tercer nivel derivado, no un cuarto fondo de sección.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla del Tenue Prohibido",
+        "body": "text-muted nunca va sobre surface-2 (3.8:1, falla AA).",
+        "section": "colors"
+      },
+      {
+        "name": "La regla de la Mono Honesta",
+        "body": "JetBrains Mono solo para datos, códigos, montos, años y números de secuencia. Nunca para titulares, etiquetas ni decoración.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla del Titular Desnudo",
+        "body": "Ningún titular lleva eyebrow, kicker ni rótulo encima. El título abre la sección.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla de la Grilla Única",
+        "body": "Todo se coloca en las columnas de la grilla maestra; cada sección cambia de motivo, no de grilla.",
+        "section": "layout"
+      },
+      {
+        "name": "La regla del Plano Absoluto",
+        "body": "Sin sombras, sin glow, sin desenfoques. Si algo necesita separarse, recibe una regla de 1px o un cambio de pliego.",
+        "section": "elevation"
+      },
+      {
+        "name": "La regla de la Figura Única",
+        "body": "El arco U y el punto del logo son las únicas figuras del sitio. No hay set de íconos. Solo se dibujan trazos funcionales mínimos de 1.5-1.75px (menú/cerrar, flecha de enlace).",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** mantener el sitio solo en tema oscuro, incluida `/privacidad`.",
+      "**Do** alternar secciones entre bg y surface y usar surface-2 como tercer nivel derivado.",
+      "**Do** reservar el acento para CTA, enlaces y detalles de estado; un CTA primario por vista.",
+      "**Do** usar Sora y JetBrains Mono autoalojadas vía `@fontsource-variable`; mono solo para datos, códigos y números de secuencia.",
+      "**Do** separar con reglas de 1px y cambios de pliego, nunca con sombras.",
+      "**Do** colocar todo en la grilla maestra de 4 / 8 / 12 columnas.",
+      "**Do** rotular todo proyecto de portafolio como ejemplo con datos ficticios.",
+      "**Do** desactivar el dibujo del arco y las transiciones de reglas con `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "**Don't** añadir glow, sombras de color, degradados de acento ni rellenos grandes en verde luz.",
+      "**Don't** poner eyebrows, kickers ni rótulos sobre los titulares.",
+      "**Don't** introducir un set de íconos ni figuras distintas del arco U y el punto del logo.",
+      "**Don't** convertir los servicios en tarjetas; son filas planas de índice.",
+      "**Don't** mostrar clientes, logos, testimonios ni cifras reales en el portafolio; solo demos rotuladas.",
+      "**Don't** usar text-muted sobre surface-2.",
+      "**Don't** usar border como borde de control; los campos usan border-control.",
+      "**Don't** usar la mono en titulares o etiquetas.",
+      "**Don't** centrar el titular del Hero ni montar filas de tarjetas iguales."
+    ]
+  }
+}

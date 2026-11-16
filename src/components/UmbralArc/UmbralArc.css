@@ -1,0 +1,48 @@
+.umbral-arc {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.umbral-arc__guide {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 0.25;
+  vector-effect: non-scaling-stroke;
+}
+
+.umbral-arc__stroke {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 9;
+}
+
+.umbral-arc__dot {
+  fill: var(--accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .umbral-arc--animated .umbral-arc__stroke {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: umbral-arc-draw 1400ms var(--ease-out) 200ms forwards;
+  }
+
+  .umbral-arc--animated .umbral-arc__dot {
+    transform-origin: 32px 32px;
+    transform: scale(0);
+    animation: umbral-arc-dot 500ms var(--ease-out) 1300ms forwards;
+  }
+}
+
+@keyframes umbral-arc-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes umbral-arc-dot {
+  to {
+    transform: scale(1);
+  }
+}

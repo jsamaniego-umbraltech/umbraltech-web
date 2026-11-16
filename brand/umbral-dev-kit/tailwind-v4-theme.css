@@ -1,0 +1,18 @@
+/* Tailwind v4: en tu CSS principal ->  @import "tailwindcss"; @import "./umbral.css"; @import "./tailwind-v4-theme.css"; */
+@theme inline {
+  --color-bg: var(--u-bg);
+  --color-surface: var(--u-surface);
+  --color-border: var(--u-border);
+  --color-text: var(--u-text);
+  --color-text-2: var(--u-text-2);
+  --color-text-muted: var(--u-text-muted);
+  --color-primary: var(--u-primary);
+  --color-primary-hover: var(--u-primary-hover);
+  --color-on-primary: var(--u-on-primary);
+  --color-accent: var(--u-accent);
+  --color-error: var(--u-error);
+  --color-warning: var(--u-warning);
+  --color-success: var(--u-success);
+  --font-sans: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}

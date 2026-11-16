@@ -1,0 +1,188 @@
+/*
+ * Portafolio de ejemplo: cada proyecto muestra la pantalla trabajando (tabla en
+ * mono, datos ficticios rotulados) junto al problema y la solución.
+ */
+.portfolio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-16);
+}
+
+.portfolio__item article {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--space-6);
+  align-items: start;
+}
+
+.portfolio__demo,
+.portfolio__text {
+  grid-column: 1 / -1;
+}
+
+.portfolio__demo {
+  margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.portfolio__demo-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.portfolio__tag {
+  font-weight: var(--weight-regular);
+  color: var(--text-muted);
+}
+
+.portfolio__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.portfolio__table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  vertical-align: baseline;
+}
+
+.portfolio__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.portfolio__value {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.portfolio__table td:last-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.portfolio__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-2);
+}
+
+.portfolio__status::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--text-muted);
+}
+
+.portfolio__status--ok::before {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.portfolio__status--alert {
+  color: var(--warning);
+}
+
+.portfolio__status--alert::before {
+  background: var(--warning);
+  border-color: var(--warning);
+}
+
+.portfolio__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+
+.portfolio__facts {
+  margin: var(--space-6) 0 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.portfolio__facts div {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+
+.portfolio__facts dt {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.portfolio__facts dd {
+  margin: var(--space-1) 0 0;
+  color: var(--text-2);
+}
+
+@media (max-width: 30rem) {
+  /* Cada fila en dos líneas: registro arriba; detalle y estado abajo */
+  .portfolio__table tr {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .portfolio__table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .portfolio__table td {
+    padding: 0;
+    border: 0;
+  }
+
+  .portfolio__table td:first-child {
+    grid-column: 1 / -1;
+    margin-bottom: var(--space-1);
+    color: var(--text-2);
+  }
+
+  .portfolio__value {
+    text-align: left;
+  }
+
+  .portfolio__table td:last-child {
+    width: auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .portfolio__demo {
+    grid-column: 1 / span 7;
+  }
+
+  .portfolio__text {
+    grid-column: 9 / -1;
+  }
+
+  /* Alterna el lado de la pantalla para marcar el ritmo */
+  .portfolio__item:nth-child(even) .portfolio__demo {
+    grid-column: 6 / -1;
+    grid-row: 1;
+  }
+
+  .portfolio__item:nth-child(even) .portfolio__text {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+}
